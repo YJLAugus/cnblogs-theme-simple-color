@@ -400,12 +400,7 @@ function switchModelErcyMode(){
 
 <img src="https://img.imjad.cn/images/2019/09/16/Snipaste_2019-09-16_17-18-01.png" data-action="zoom">
 
-## 下载地址
 
-* [cnblogs-theme-simple-color](https://github.com/YJLAugus/cnblogs-theme-simple-color)
 
-* 求个小星星!
 
-## 写在最后
 
-如有什么问题可评论在下方，及时更正，再次感谢。
