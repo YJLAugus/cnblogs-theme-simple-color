@@ -1,0 +1,179 @@
+<!-- 头像 -->
+<div class="av">
+<img class="but" itemprop="image" src="你的头像链接" style="cursor:pointer;"width= "100%" alt="YJLAugus" />
+</div>
+<!-- 头像 -->
+<!--主题切换-->
+<script>
+	$('.fa.fa-cog.fa-spin.fa-lg').click(function () {
+	    $(this).closest('.float-btn-group').toggleClass('open');
+	});
+</script>
+
+<script type="text/javascript">
+    $.silence({
+        profile: {
+            enable: true,
+            avatar: '',
+            favicon: 'https://files-cdn.cnblogs.com/files/yjlaugus/favicon.ico',
+        },
+        catalog: {
+            enable: true,
+            move: true,
+            index: true,
+            level1: 'h2',
+            level2: 'h3',
+            level3: 'h4',
+        },
+        signature: {
+            enable: true,
+            home: 'https://yjlaugus.cnblogs.com/',
+            license: 'CC BY 4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0'
+        },
+       reward: {
+            enable: true,
+            title: '『一键投喂 软糖/蛋糕/布丁/牛奶/冰阔乐！』',
+            wechat: 'https://www.cnblogs.com/images/cnblogs_com/yjlblog/1280680/o_wx_zfx.png',
+            alipay: 'https://www.cnblogs.com/images/cnblogs_com/yjlblog/1280680/o_zfb_zfx.png',
+        },     
+        github: {
+            enable: false,
+            color: '#fff',
+            fill: null,
+            link: 'https://github.com/YJLAugus/'
+        }
+    });
+</script>
+
+<script>
+
+function switchNightMode(){
+    var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+    if(night == '0'){
+        document.body.classList.add('night');
+        document.cookie = "night=1;path=/"
+        console.log('夜间模式开启');
+    }else{
+        document.body.classList.remove('night');
+        document.cookie = "night=0;path=/"
+        console.log('夜间模式关闭');
+    }
+}
+
+(function(){
+    if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
+        if(new Date().getHours() > 22 || new Date().getHours() < 6){
+            document.body.classList.add('night');
+            document.cookie = "night=1;path=/";
+            console.log('夜间模式开启');
+        }else{
+            document.body.classList.remove('night');
+            document.cookie = "night=0;path=/";
+            console.log('夜间模式关闭');
+        }
+    }else{
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(night == '0'){
+            document.body.classList.remove('night');
+        }else if(night == '1'){
+            document.body.classList.add('night');
+        }
+    }
+})();
+
+</script>
+
+<script>
+
+function switchModelMode(){
+    var model = document.cookie.replace(/(?:(?:^|.*;\s*)model\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+    if(model == '0'){
+        document.body.classList.add('model');
+        document.cookie = "model=1;path=/"
+        console.log('皮肤模式开启');
+    }else{
+        document.body.classList.remove('model');
+        document.cookie = "model=0;path=/"
+        console.log('皮肤模式关闭');
+    }
+}
+
+
+function switchModelErcyMode(){
+    var modelercy = document.cookie.replace(/(?:(?:^|.*;\s*)modelercy\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+    if(modelercy == '0'){
+        document.body.classList.add('modelercy');
+        document.cookie = "modelercy=1;path=/"
+        console.log('皮肤模式开启');
+    }else{
+        document.body.classList.remove('modelercy');
+        document.cookie = "modelercy=0;path=/"
+        console.log('皮肤模式关闭');
+    }
+}
+
+(function(){
+    
+        var modelercy = document.cookie.replace(/(?:(?:^|.*;\s*)modelercy\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(modelercy == '0'){
+            document.body.classList.remove('modelercy');
+        }else if(modelercy == '1'){
+            document.body.classList.add('modelercy');
+        }
+    
+})();
+
+(function(){
+    var model = document.cookie.replace(/(?:(?:^|.*;\s*)model\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(model == '0'){
+            document.body.classList.remove('model');
+        }else if(model == '1'){
+            document.body.classList.add('model');
+        }
+  
+})();
+</script>
+<!-- 头像 -->
+
+<!-- 头像搞怪音乐 -->
+<script>
+    $(document).ready(function() {
+        var voice = document.getElementById('voice'); //获取到audio元素
+          $('.but').click(function() { //点击文字事件
+            if (voice.paused) { //判断音乐是否在播放中，暂停状态
+                voice.play(); //音乐播放
+                $('.but').text('暂停'); //切换文字
+                 
+            } else { //播放状态
+                voice.pause(); //音乐停止
+                $('.but').text('播放'); //切换文字
+            }
+        });
+     });
+</script>
+<!-- 头像搞怪音乐 -->
+
+<!--随笔发布信息-->
+<script>
+if ($("#topics")!=null){
+$("#cnblogs_post_body").before("<p class='publishinfo'><img src='https://img.shields.io/badge/Post-"+$("#post-date").text().replace(/\-/g,"--").replace(/\ /g,"%20").replace(/\:/g,"%3A")+"-blue'/>"+
+
+"<img src='https://img.shields.io/badge/Read-" + $("#post_view_count").text() + "-red'/>" +
+
+"<img src='https://img.shields.io/badge/Comment-" + $("#post_comment_count").text() + "-green'/><br/>" +
+ $("#BlogPostCategory").html() + $("#EntryTag").html() +"</p>")
+}
+</script>
+
+<!--首页排版调整-->
+<script>
+for(i=0;i<=$(".desc_img").length;i++){
+$(".desc_img").eq(i).insertBefore($(".postTitle").eq(i));
+$(".postDesc").eq(i).insertAfter($(".day .postTitle").eq(i));
+}
+for(i=0;i<=$(".entrylistPostSummary").length;i++){
+$(".desc_img").eq(i).insertBefore($(".entrylistPosttitle").eq(i));
+$(".entrylistItemPostDesc").eq(i).insertAfter($(".entrylistPosttitle").eq(i));
+}
+</script>
