@@ -136,7 +136,7 @@ function(p) {
         {
             key: "buildCopyright",
             value: function() {
-                var e = '<div> Powered By <a href="https://www.cnblogs.com" target="_blank">Cnblogs</a> |\n            Theme <a href="https://github.com/yjlaiugus/" target="_blank">simple-color' + this.version + "</a></div>";
+                var e = '<div> Powered By <a href="https://www.cnblogs.com" target="_blank">Cnblogs</a> |\n            Theme <a href="https://github.com/YJLAugus/cnblogs-theme-simple-color" target="_blank">simple-color' + this.version + "</a></div>";
                 p(this.cnblogs.footer).append(e)
             }
         },
