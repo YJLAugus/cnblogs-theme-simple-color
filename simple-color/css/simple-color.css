@@ -16,4 +16,7 @@ body.modelercy .esa-catalog-contents ul li{color:#3a4f64}#header{width:100%!impo
     background: url(https://files-cdn.cnblogs.com/files/yjlaugus/caidai.gif);
     background-size: cover;
 
+}#header #blogTitle {
+    
+    left: 49px;
 }
