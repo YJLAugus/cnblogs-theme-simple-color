@@ -1,19 +1,18 @@
-# 博客园简约主题simple-color 
+## 写在前面
 
-## 写在前面 
-
-> 本款主题是基于 [@esofar](https://home.cnblogs.com/u/esofar)大佬的`silence`主题，稍加更改完成。喜欢主题的极简风，同时也适配了许多个性话的东西，所以，主题总体基本没有任何的优化，代码凌乱，本不想放出，毕竟代码混乱，毫无逻辑可言，近期有许多小伙伴想要这一套主题，特此放出。不当之处定会有许多，请多担待。同时也部分参考了[GShang](https://home.cnblogs.com/u/gshang)学长的博客，特表感谢。
+> 本款主题是基于 [@esofar](https://www.cnblogs.com/esofar/)大佬的`silence`主题，稍加更改完成。喜欢主题的极简风，同时也适配了许多个性化的东西，所以，主题总体基本没有任何的优化，代码凌乱，本不想放出，毕竟代码混乱，毫无逻辑可言，近期有许多小伙伴想要这一套主题，特此放出。不当之处定会有许多，请多担待。同时也部分参考了[GShang](https://www.cnblogs.com/gshang)学长的博客，特表感谢。
 
 ### 功能简介
 
 * 移动端适配
-* 极简白，夜间黑，清新透明，玻璃磨砂 四中主题模式自动切换
+* 极简白，夜间黑，清新透明，玻璃磨砂 四种主题模式自动切换
 * 音乐播放器
 * 图片灯箱
 * 文章自动目录生成
 
 ## 主题预览
 
+夜间黑主题：<input type="button" value="开启/关闭夜间模式" onclick="switchNightMode();">。超级美丽漂亮可爱的小姐姐主题：<input type="button" value="开启/关闭MM模式" onclick="switchModelMode();">。阔耐的动漫主题：<input type="button" value="开启/关闭ercy模式" onclick="switchModelErcyMode();">，或者点击博客左上角<i class="fa fa-cog fa-spin fa-lg "></i>进行预览。
 ### 极简白
 
 个人比较喜欢的一个样式，极简风。
@@ -41,8 +40,11 @@
 ## 主题部署
 
 ### 一键部署
+<p>
+    <div class="info"><p>如果你想快速搭建出和本博客一样的主题样式，请查看下面这句说明。当然，前提是你得有<font  color="red">js权限。</font></p></div>
+</p>
 
-下载文件打包~一键部署。只需更改文件的链接即可。下面的部署文档只为了个性化定制而写。如果你想个性化的定制博客主题，请接着往下看，如果想部署和当前博客一样的样式。请下载后一键部署。[下载地址](#) 见文章末尾。
+如果想部署和当前博客一样的样式。直接下载整个主题，[下载地址](#MySignature) 见文章末尾。把**页脚**，**页首**，**侧边栏**的代码粘贴到你的博客后台，然后**更改一下其中的文件链接地址**即可。下面的部署文档只为了个性化定制而写，如果你想个性化的定制博客主题，请接着往下看，
 
 ### 基本部署
 
@@ -218,7 +220,7 @@
 
 #### 博客自动更换主题
 
-实现四种年主题样式自定义切换。点击<i class="fa fa-cog fa-spin fa-lg "></i> 试试！
+实现四种主题样式自定义切换。点击博客左上角的<i class="fa fa-cog fa-spin fa-lg "></i> 试试看！当然，如果你还不满足于现在的主题样式，可以自己定制自己的主题样式，详细请转看文章[还在美化博客吗？试试一键更换博客主题吧！](https://www.cnblogs.com/yjlaugus/p/11223861.html)
 
 ```
 <!--主题切换 放在侧边栏-->
@@ -343,7 +345,6 @@ function switchModelErcyMode(){
 ```
 
 
-
 #### 底部加载音乐播放器
 
 ```
@@ -400,7 +401,12 @@ function switchModelErcyMode(){
 
 <img src="https://img.imjad.cn/images/2019/09/16/Snipaste_2019-09-16_17-18-01.png" data-action="zoom">
 
+## 下载地址
 
+* [cnblogs-theme-simple-color](https://github.com/YJLAugus/cnblogs-theme-simple-color)
 
+* 求个小星星!
 
+## 写在最后
 
+如有什么问题可评论在下方，及时更正，再次感谢。
